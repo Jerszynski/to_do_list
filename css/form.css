@@ -6,7 +6,7 @@
 /* pierwszy kontener - "dodaj nowe zadanie" */
 .form__newTaskContainer {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 5px;
   border-radius: 4px;
 }
@@ -31,6 +31,7 @@
   max-width: 580px;
   width: 100%;
   padding: 10px;
+  border-radius: 4px;
 }
 
 .newTask__addButton {
@@ -41,4 +42,27 @@
   border: 0;
   border-radius: 4px;
   color: #fff;
+}
+
+/* trzeci kontener - "Lista zadań" */
+.form__tasksHeaderContainer {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.tasksContainer__header {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* dodawane zadania */
+.form__tasksList {
+  background-color: #ffffff;
+  border-radius: 4px;
+  min-height: 50px;
+}
+
+.tasks {
 }
