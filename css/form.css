@@ -67,10 +67,16 @@
 .tasks {
   padding: 0 30px;
   margin: 10px 0;
+  list-style: none;
 }
 
 .task__item {
   border-bottom: 1px solid #ddd;
-  list-style-type: none;
-  padding: 10px 0;
+  padding: 6px 0;
+}
+
+.task__item--done {
+  text-decoration: line-through;
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
 }

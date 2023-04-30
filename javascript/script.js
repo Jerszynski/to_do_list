@@ -8,6 +8,10 @@
       content: "Zadanie 2",
       done: true,
     },
+    {
+      content: "Zadanie 3",
+      done: false,
+    },
   ];
 
   const render = () => {
@@ -15,7 +19,9 @@
 
     for (const task of tasks) {
       htmlString += `
-        <li>${task.content}</li>
+        <li class="${task.done ? "task__item--done" : "task__item"}">${
+        task.content
+      }</li>
         `;
     }
 
