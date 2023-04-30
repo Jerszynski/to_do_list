@@ -19,9 +19,11 @@
 
     for (const task of tasks) {
       htmlString += `
-        <li class="${task.done ? "task__item--done" : "task__item"}">${
-        task.content
-      }</li>
+        
+        <li class="${task.done ? "task__item--done" : "task__item"}">
+        <button>done</button>
+        ${task.content}
+        <button>delete</button></li>
         `;
     }
 
