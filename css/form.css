@@ -26,7 +26,7 @@
   justify-content: space-between;
 }
 
-.newTask__Input {
+.newTask__input {
   border: 1px solid #ddd;
   max-width: 580px;
   width: 100%;
