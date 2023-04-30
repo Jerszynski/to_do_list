@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.body {
+  background-color: #eee;
+}
+
+.mainContainer {
+  margin: 200px auto;
+  max-width: 800px;
+}
