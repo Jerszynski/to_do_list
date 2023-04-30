@@ -15,3 +15,30 @@
   font-size: 20px;
   margin: 0;
 }
+
+/* drugi kontener - dodawanie zadania */
+.form__addNewTaskContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newTask__Input {
+  border: 1px solid #ddd;
+  max-width: 580px;
+  width: 100%;
+  padding: 10px;
+}
+
+.newTask__addButton {
+  padding: 10px;
+  width: 150px;
+  font-size: 16px;
+  background-color: rgb(93, 190, 93);
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+}
