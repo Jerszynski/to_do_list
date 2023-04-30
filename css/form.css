@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* pierwszy kontener - "dodaj nowe zadanie" */
+.form__newTaskContainer {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.newTaskContainer__Header {
+  font-size: 20px;
+  margin: 0;
+}
