@@ -22,13 +22,24 @@
     document.querySelector(".js-tasks").innerHTML = htmlString;
   };
 
+  const addNewTask = (addTaskButtonElement) => {
+    tasks.push({ content: addTaskButtonElement });
+
+    render();
+  };
+
   const onFormSubmit = (event) => {
     event.preventDefault();
 
     const addTaskButtonElement = document
-      .querySelector(".js-addTaskButton")
+      .querySelector(".js-addTaskInput")
       .value.trim();
-    console.log(addTaskButtonElement);
+
+    if (addTaskButtonElement === "") {
+      return;
+    }
+
+    addNewTask(addTaskButtonElement);
   };
 
   const init = () => {
