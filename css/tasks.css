@@ -14,8 +14,10 @@
   border-bottom: 1px solid #ddd;
   padding: 6px 0;
   display: grid;
-  grid-template-columns: 50px 1fr 50px;
+  grid-template-columns: 30px 1fr 30px;
   justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 .task__item--done {
@@ -23,6 +25,28 @@
   border-bottom: 1px solid #ddd;
   padding: 6px 0;
   display: grid;
-  grid-template-columns: 50px 1fr 50px;
+  grid-template-columns: 30px 1fr 30px;
   justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.tasks__doneButton {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+}
+
+.tasks__deleteButton {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
 }
