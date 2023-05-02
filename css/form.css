@@ -46,6 +46,14 @@
   color: #fff;
 }
 
+.newTask__addButton:hover {
+  background-color: hsl(120, 43%, 45%);
+}
+
+.newTask__addButton:focus {
+  transform: scale(0.98);
+}
+
 .form__tasksHeaderContainer {
   background-color: var(--background-color-white);
   padding: 15px;

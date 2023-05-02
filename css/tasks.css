@@ -35,6 +35,10 @@
   border-radius: var(--border-radius);
 }
 
+.tasks__doneButton:hover {
+  background-color: hsl(120, 100%, 35%);
+}
+
 .tasks__deleteButton {
   background-color: red;
   color: white;
@@ -43,6 +47,10 @@
   margin: 0;
   border: none;
   border-radius: var(--border-radius);
+}
+
+.tasks__deleteButton:hover {
+  background-color: hsl(0, 100%, 40%);
 }
 
 .task__content--done {
