@@ -27,7 +27,13 @@
   const addNewTask = (addTaskInputElement) => {
     tasks.push({ content: addTaskInputElement });
 
+    resetAndFocusInput();
     render();
+  };
+
+  const resetAndFocusInput = () => {
+    document.querySelector(".js-addTaskInput").value = "";
+    document.querySelector(".js-addTaskInput").focus();
   };
 
   const bindsEvents = () => {
@@ -54,7 +60,9 @@
     for (const task of tasks) {
       htmlString += `
       <li class="task__item">
-        <button class="tasks__doneButton js-done">✔</button>
+        <button class="tasks__doneButton js-done">${
+          task.done ? "✔" : ""
+        }</button>
         <span class="task__content  ${
           task.done ? "task__content--done" : ""
         }">${task.content}</span>
@@ -77,6 +85,10 @@
 
     if (addTaskInputElement === "") {
       return;
+    }
+
+    if (addTaskInputElement === " ") {
+      addTaskInputElement.value = "";
     }
 
     addNewTask(addTaskInputElement);
