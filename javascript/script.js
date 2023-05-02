@@ -30,21 +30,7 @@
     render();
   };
 
-  const render = () => {
-    let htmlString = "";
-
-    for (const task of tasks) {
-      htmlString += `
-      <li class="${task.done ? "task__item--done" : "task__item"}">
-      <button class="js-done">done</button>
-      ${task.content}
-      <button class="js-delete">delete</button>
-        </li>
-        `;
-    }
-
-    document.querySelector(".js-tasks").innerHTML = htmlString;
-
+  const bindsEvents = () => {
     const deleteButtonElement = document.querySelectorAll(".js-delete");
 
     deleteButtonElement.forEach((deleteButtonElement, index) => {
@@ -60,6 +46,24 @@
         toggleDoneTask(index);
       });
     });
+  };
+
+  const render = () => {
+    let htmlString = "";
+
+    for (const task of tasks) {
+      htmlString += `
+      <li class="${task.done ? "task__item--done" : "task__item"}">
+      <button class="js-done">done</button>
+      ${task.content}
+      <button class="js-delete">delete</button>
+        </li>
+        `;
+    }
+
+    document.querySelector(".js-tasks").innerHTML = htmlString;
+
+    bindsEvents();
   };
 
   const onFormSubmit = (event) => {
