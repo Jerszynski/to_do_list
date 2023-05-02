@@ -1,0 +1,28 @@
+.form__tasksList {
+  background-color: #ffffff;
+  border-radius: 4px;
+  min-height: 50px;
+}
+
+.tasks {
+  padding: 0 30px;
+  margin: 10px 0;
+  list-style: none;
+}
+
+.task__item {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  justify-content: space-between;
+}
+
+.task__item--done {
+  text-decoration: line-through;
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  justify-content: space-between;
+}
