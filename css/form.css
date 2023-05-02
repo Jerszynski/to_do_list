@@ -6,7 +6,7 @@
 .form__newTaskContainer {
   background-color: #ffffff;
   padding: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   border-radius: 4px;
 }
 
@@ -44,7 +44,7 @@
 .form__tasksHeaderContainer {
   background-color: #fff;
   padding: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   border-radius: 4px;
 }
 

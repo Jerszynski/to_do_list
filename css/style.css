@@ -13,6 +13,7 @@ html {
 }
 
 .mainContainer {
+  font-family: "Rubik", sans-serif;
   margin: 100px auto;
   max-width: 800px;
   padding: 10px;

@@ -83,12 +83,9 @@
       .querySelector(".js-addTaskInput")
       .value.trim();
 
-    if (addTaskInputElement === "") {
+    if (addTaskInputElement === "" || addTaskInputElement === " ") {
+      document.querySelector(".js-addTaskInput").focus();
       return;
-    }
-
-    if (addTaskInputElement === " ") {
-      addTaskInputElement.value = "";
     }
 
     addNewTask(addTaskInputElement);
