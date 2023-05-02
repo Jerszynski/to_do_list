@@ -1,18 +1,5 @@
 {
-  const tasks = [
-    {
-      content: "Zadanie 1",
-      done: false,
-    },
-    {
-      content: "Zadanie 2",
-      done: true,
-    },
-    {
-      content: "Zadanie 3",
-      done: false,
-    },
-  ];
+  const tasks = [];
 
   const toggleDoneTask = (taskIndex) => {
     tasks[taskIndex].done = !tasks[taskIndex].done;
