@@ -73,6 +73,9 @@
 .task__item {
   border-bottom: 1px solid #ddd;
   padding: 6px 0;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  justify-content: space-between;
 }
 
 .task__item--done {
