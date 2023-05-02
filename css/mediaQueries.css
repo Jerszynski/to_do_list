@@ -1,0 +1,15 @@
+@media (max-width: 480px) {
+  .mainContainer {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .form__addNewTaskContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .task__content {
+    word-break: break-word;
+  }
+}
