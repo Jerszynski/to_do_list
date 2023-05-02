@@ -20,21 +20,20 @@
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 4px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 100px;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .newTask__input {
   border: 1px solid #ddd;
-  max-width: 580px;
-  width: 100%;
   padding: 10px;
   border-radius: 4px;
 }
 
 .newTask__addButton {
   padding: 10px;
-  width: 150px;
   font-size: 16px;
   background-color: rgb(93, 190, 93);
   border: 0;

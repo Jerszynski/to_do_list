@@ -13,6 +13,7 @@ html {
 }
 
 .mainContainer {
-  margin: 200px auto;
+  margin: 100px auto;
   max-width: 800px;
+  padding: 10px;
 }
