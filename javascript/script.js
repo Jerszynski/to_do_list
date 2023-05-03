@@ -65,9 +65,16 @@
     const newTaskElement = document.querySelector(".js-addTaskInput");
     const newTaskContent = newTaskElement.value.trim();
 
+    const errorMessageElement = document.querySelector(".js-errorMessage");
+    if (newTaskContent.includes("<") || newTaskContent.includes("<")) {
+      errorMessageElement.innerHTML = 'Invalid character "<" or ">" ';
+      return;
+    }
+
     if (newTaskContent !== "") {
       addNewTask(newTaskContent);
       newTaskElement.value = "";
+      errorMessageElement.innerHTML = "";
       return;
     }
 
