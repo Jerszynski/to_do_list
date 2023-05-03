@@ -1,5 +1,5 @@
 @media (max-width: 480px) {
-  .mainContainer {
+  .main {
     margin: 20px auto;
     padding: 15px;
   }
@@ -9,7 +9,7 @@
     flex-direction: column;
   }
 
-  .task__content {
+  .tasks__content {
     word-break: break-word;
   }
 }
