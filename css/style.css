@@ -12,10 +12,16 @@ html {
   background-color: #eee;
 }
 
-.mainContainer {
+.main {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   margin: 100px auto;
   max-width: 800px;
   padding: 10px;
+}
+
+.main__header {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 0;
 }

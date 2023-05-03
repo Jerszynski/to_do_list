@@ -10,12 +10,12 @@
 }
 
 .tasks {
-  padding: 0 20px;
-  margin: 10px 0;
+  padding: 10px 20px;
+  margin: 0;
   list-style: none;
 }
 
-.task__item {
+.tasks__item {
   border-bottom: 1px solid #ddd;
   padding: 6px 0;
   display: grid;
@@ -55,7 +55,7 @@
   background-color: hsl(0, 100%, 40%);
 }
 
-.task__content--done {
+.tasks__content--done {
   text-decoration: line-through;
   color: rgba(128, 128, 128, 0.5);
 }

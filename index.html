@@ -30,28 +30,36 @@
     <title>To Do List</title>
   </head>
   <body class="body">
-    <div class="mainContainer">
-      <h1>Task list</h1>
-      <form action="" class="form js-form">
-        <div class="form__newTaskContainer">
-          <h3 class="newTaskContainer__Header">Add new task</h3>
+    <main class="main">
+      <header class="main__header">Task list</header>
+
+      <section class="section">
+        <h2 class="section__header">Add new task</h2>
+        <div class="section__body">
+          <form action="" class="form js-form">
+            <div class="form__addNewTaskContainer">
+              <input
+                type="text"
+                class="newTask__input js-addTaskInput"
+                placeholder="What do you need to do?"
+                autofocus
+              />
+              <button class="newTask__addButton js-addTaskButton">
+                Add task
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="form__addNewTaskContainer">
-          <input
-            type="text"
-            class="newTask__input js-addTaskInput"
-            placeholder="What do you need to do?"
-            autofocus
-          />
-          <button class="newTask__addButton js-addTaskButton">Add task</button>
+      </section>
+
+      <section class="section">
+        <h2 class="section__header">List of tasks</h2>
+        <div class="section__body">
+          <div class="form__tasksList">
+            <ul class="tasks js-tasks"></ul>
+          </div>
         </div>
-        <div class="form__tasksHeaderContainer">
-          <h3 class="tasksContainer__header">List of tasks</h3>
-        </div>
-        <div class="form__tasksList">
-          <ul class="tasks js-tasks"></ul>
-        </div>
-      </form>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
