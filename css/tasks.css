@@ -40,7 +40,7 @@
 }
 
 .tasks__deleteButton {
-  background-color: red;
+  background-color: #eb0000;
   color: white;
   min-height: var(--min-height);
   font-weight: bold;

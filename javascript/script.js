@@ -53,7 +53,7 @@
         <span class="task__content  ${
           task.done ? "task__content--done" : ""
         }">${task.content}</span>
-        <button class="tasks__deleteButton js-delete">🗑</button>
+        <button class="tasks__deleteButton js-delete">✖</button>
       </li>
       `;
     }
