@@ -66,8 +66,8 @@
     const newTaskContent = newTaskElement.value.trim();
 
     const errorMessageElement = document.querySelector(".js-errorMessage");
-    if (newTaskContent.includes("<") || newTaskContent.includes("<")) {
-      errorMessageElement.innerHTML = 'Invalid character "<" or ">" ';
+    if (newTaskContent.includes("<") && newTaskContent.includes(">")) {
+      errorMessageElement.innerHTML = 'Invalid characters: "< , >" ';
       return;
     }
 
