@@ -48,6 +48,7 @@
 
 .newTask__addButton:hover {
   background-color: hsl(120, 43%, 45%);
+  cursor: pointer;
 }
 
 .newTask__addButton:focus {

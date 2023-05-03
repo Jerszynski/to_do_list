@@ -33,6 +33,7 @@
   margin: 0;
   border: none;
   border-radius: var(--border-radius);
+  cursor: pointer;
 }
 
 .tasks__doneButton:hover {
@@ -47,6 +48,7 @@
   margin: 0;
   border: none;
   border-radius: var(--border-radius);
+  cursor: pointer;
 }
 
 .tasks__deleteButton:hover {
