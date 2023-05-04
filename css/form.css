@@ -6,6 +6,13 @@
 .form {
   display: flex;
   flex-direction: column;
+  background-color: var(--background-color-white);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .section__header {
@@ -19,16 +26,6 @@
 
 .section__body {
   margin-bottom: 15px;
-}
-
-.form__addNewTaskContainer {
-  background-color: var(--background-color-white);
-  padding: 20px;
-  border-radius: var(--border-radius);
-  display: grid;
-  grid-template-columns: 1fr 100px;
-  justify-content: space-between;
-  gap: 10px;
 }
 
 .newTask__input {

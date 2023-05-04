@@ -3,16 +3,14 @@
   --border-radius: 4px;
 }
 
-.form__tasksList {
-  background-color: #ffffff;
-  border-radius: var(--border-radius);
-  min-height: 50px;
-}
-
 .tasks {
   padding: 10px 20px;
   margin: 0;
   list-style: none;
+
+  background-color: #ffffff;
+  border-radius: var(--border-radius);
+  min-height: 50px;
 }
 
 .tasks__item {
