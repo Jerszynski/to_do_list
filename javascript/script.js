@@ -75,9 +75,9 @@
       addNewTask(newTaskContent);
       newTaskElement.value = "";
       errorMessageElement.innerHTML = "";
+      newTaskElement.focus();
       return;
     }
-
     newTaskElement.focus();
   };
 
