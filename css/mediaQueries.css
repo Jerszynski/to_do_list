@@ -4,9 +4,9 @@
     padding: 15px;
   }
 
-  .form__addNewTaskContainer {
-    display: flex;
-    flex-direction: column;
+  .form {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
 
   .tasks__content {

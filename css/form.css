@@ -3,18 +3,6 @@
   --border-radius: 4px;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--background-color-white);
-  padding: 20px;
-  border-radius: var(--border-radius);
-  display: grid;
-  grid-template-columns: 1fr 100px;
-  justify-content: space-between;
-  gap: 10px;
-}
-
 .section__header {
   font-size: 20px;
   margin: 0;
@@ -24,8 +12,18 @@
   border-radius: var(--border-radius);
 }
 
-.section__body {
+.section {
   margin-bottom: 15px;
+}
+
+.form {
+  background-color: var(--background-color-white);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  gap: 0 10px;
 }
 
 .form__input {
@@ -43,27 +41,16 @@
   color: #1f1f1f;
 }
 
-.newTask__addButton:hover {
+.form__addButton:hover {
   background-color: hsl(120, 43%, 45%);
   cursor: pointer;
 }
 
-.newTask__addButton:focus {
+.form__addButton:focus {
   transform: scale(0.98);
-}
-
-.form__tasksHeaderContainer {
-  background-color: var(--background-color-white);
-  padding: 15px;
-  margin-bottom: 3px;
-  border-radius: var(--border-radius);
-}
-
-.tasksContainer__header {
-  font-size: 20px;
-  margin: 0;
 }
 
 .form__errorMessageContainer {
   color: red;
+  margin: 5px 0 0 5px;
 }

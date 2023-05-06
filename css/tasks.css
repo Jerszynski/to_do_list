@@ -1,5 +1,6 @@
 :root {
-  --min-height: 25px;
+  --height: 25px;
+  --width: 25px;
   --border-radius: 4px;
 }
 
@@ -7,7 +8,6 @@
   padding: 10px 20px;
   margin: 0;
   list-style: none;
-
   background-color: #ffffff;
   border-radius: var(--border-radius);
   min-height: 50px;
@@ -17,43 +17,39 @@
   border-bottom: 1px solid #ddd;
   padding: 6px 0;
   display: grid;
-  grid-template-columns: 25px 1fr 25px;
-  justify-content: space-between;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 10px;
 }
 
-.tasks__doneButton {
+.tasks__button {
+  color: white;
+  height: var(--height);
+  width: var(--width);
+  font-weight: bold;
+  margin: 0;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.tasks__button--done {
   background-color: green;
-  color: white;
-  min-height: var(--min-height);
-  font-weight: bold;
-  margin: 0;
-  border: none;
-  border-radius: var(--border-radius);
-  cursor: pointer;
 }
 
-.tasks__doneButton:hover {
+.tasks__button--done:hover {
   background-color: hsl(120, 100%, 35%);
-}
-
-.tasks__deleteButton {
-  background-color: #eb0000;
-  color: white;
-  min-height: var(--min-height);
-  font-weight: bold;
-  margin: 0;
-  border: none;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-}
-
-.tasks__deleteButton:hover {
-  background-color: hsl(0, 100%, 40%);
 }
 
 .tasks__content--done {
   text-decoration: line-through;
   color: rgba(128, 128, 128, 0.5);
+}
+
+.tasks__button--delete {
+  background-color: #eb0000;
+}
+
+.tasks__button--delete:hover {
+  background-color: hsl(0, 100%, 40%);
 }

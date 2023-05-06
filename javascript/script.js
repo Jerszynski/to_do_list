@@ -41,15 +41,15 @@
     for (const task of tasks) {
       htmlString += `
         <li class="tasks__item">
-          <button class="tasks__doneButton js-done">
+          <button class="tasks__button tasks__button--done js-done">
             ${task.done ? "✔" : ""}
           </button>
-          <span class="tasks__content  ${
+          <span class="tasks__content ${
             task.done ? "tasks__content--done" : ""
           }">
             ${task.content}
           </span>
-          <button class="tasks__deleteButton js-delete">✖</button>
+          <button class="tasks__button tasks__button--delete js-delete">✖</button>
         </li>
       `;
     }
@@ -75,8 +75,6 @@
       addNewTask(newTaskContent);
       newTaskElement.value = "";
       errorMessageElement.innerHTML = "";
-      newTaskElement.focus();
-      return;
     }
     newTaskElement.focus();
   };
