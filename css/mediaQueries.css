@@ -12,4 +12,12 @@
   .tasks__content {
     word-break: break-word;
   }
+
+  .section__header {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .header__button--order {
+    text-align: center;
+  }
 }
