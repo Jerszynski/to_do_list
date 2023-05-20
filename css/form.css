@@ -59,6 +59,7 @@
 .form__addButton:hover {
   background-color: hsl(120, 43%, 45%);
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .form__addButton:focus {
